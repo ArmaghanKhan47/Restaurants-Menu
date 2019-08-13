@@ -1,0 +1,210 @@
+@font-face
+{
+    font-family: sam;
+    src: url("SamsungOne-400.ttf");
+}
+body
+{
+    background-image: url("chef-close-up-cooking-pot-175753.jpg");
+    background-size: 1380px 800px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sam;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.5);
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 5px;
+    margin-top: 10px;
+}
+table
+{
+    display: inline-block;
+    text-align: left;
+    border-collapse: collapse;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+tr:hover
+{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+td:hover
+{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+td, th
+{
+    
+    padding: 10px;
+}
+.input
+{
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border: none;
+    line-height: 10px;
+    color: white;
+    font-family: sam;
+    font-size: 15px;
+    width: 80px;
+    line-height: 15px;
+}
+.pop-up
+{
+    display: none;
+    z-index: 5;
+    grid-template-columns: 166px 166px 166px;
+    grid-template-rows: 100px 100px 100px;
+    position: fixed;
+    margin: 20px 0px 0px 400px;
+    height: 300px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.blur-effect
+{
+    -webkit-filter: blur(2px);
+}
+.symbol-success
+{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    color: green;
+    font-size: 100px;
+    margin: auto;
+}
+
+.symbol-warning
+{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    color: orangered;
+    font-size: 100px;
+    margin: auto;
+}
+.order
+{
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    text-align: center;
+}
+span
+{
+    font-size: 40px;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    text-align: right;
+    padding: 1px;
+    display: inline-block;
+}
+p.close
+{
+    margin-top: auto;
+}
+p.close:hover
+{
+    color: red;
+}
+nav
+{
+    display: block;
+    padding: 10px;
+}
+.brand
+{
+    text-align: left;
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(to bottom right, #eb6c00, #b0321c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+th
+{
+    background: linear-gradient(to bottom right, #eb6c00, #b0321c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.button-group
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    height: auto;
+    width: auto;
+    float: right;
+    font-size: 30px;
+    padding: 45px;
+    color: #eb6c00;
+    font-weight: 100;
+}
+.contrast-setting
+{
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    float: right;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.slider
+{
+     -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;   
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.slider::-webkit-slider-thumb
+{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; 
+  background: #eb6c00;
+  cursor: pointer;
+}
+.apply-btn
+{
+    background: linear-gradient(to bottom right, #eb6c00, #b0321c);
+    border: none;
+    outline: none;
+    color: white;
+    font-family: sam;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+}
+.input-voucher
+{
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border: none;
+    line-height: 100%;
+    color: white;
+    font-family: sam;
+    font-size: 15px;
+    width: 100%;
+    line-height: 15px;
+}
+.voucher-valid
+{
+    color: green;
+}
+.voucher-invalid
+{
+    color: orangered;
+}
